@@ -21,7 +21,7 @@ extern "C" {
 #endif
 
 #include <pthread.h>
-#include <libusb-1.0/libusb.h>
+#include <libusb/libusb.h>
 #include <stdint.h>
 
 namespace {

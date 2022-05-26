@@ -234,7 +234,6 @@ androidfs::mount(fscontext_t *ctx, char *mountPoint){
     m_kfs_filesystem.stat = fs_getattr;
     m_kfs_filesystem.utimes = fs_utime;
     m_kfs_filesystem.readdir = fs_readdir;
-    m_kfs_filesystem.fsync = fs_fsync;
     
     // not supported on mtp
     m_kfs_filesystem.symlink = fs_symlink;    // 0
@@ -243,7 +242,7 @@ androidfs::mount(fscontext_t *ctx, char *mountPoint){
     
     m_kfs_id = kfs_mount(&m_kfs_filesystem);
     if (m_kfs_id < 0) {
-        throw ("mount error: " + std::string(kfs_strerror(errno)));
+        throw ("mount error: " + std::string(strerror(errno)));
         return false;
     }
     return true;

@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52569A88283FFE46006202B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569A87283FFE46006202B2 /* main.cpp */; };
+		52569A96283FFFA9006202B2 /* kfsops.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569A8E283FFFA9006202B2 /* kfsops.cpp */; };
+		52569A97283FFFA9006202B2 /* discovery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569A8F283FFFA9006202B2 /* discovery.cpp */; };
+		52569A98283FFFA9006202B2 /* androidfs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569A92283FFFA9006202B2 /* androidfs.cpp */; };
+		52569A99283FFFA9006202B2 /* mnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569A95283FFFA9006202B2 /* mnode.cpp */; };
+		52569AD328400209006202B2 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52569AB22840019F006202B2 /* libusb-1.0.0.dylib */; };
+		52569AD42840020B006202B2 /* KFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52569ACB284001A8006202B2 /* KFS.framework */; };
+		52569B0228400532006202B2 /* MtpDataPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AE028400532006202B2 /* MtpDataPacket.cpp */; };
+		52569B0328400532006202B2 /* usbhost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AE528400532006202B2 /* usbhost.cpp */; };
+		52569B0428400532006202B2 /* MtpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AE728400532006202B2 /* MtpUtils.cpp */; };
+		52569B0528400532006202B2 /* MtpStorageInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AE828400532006202B2 /* MtpStorageInfo.cpp */; };
+		52569B0628400532006202B2 /* MtpStringBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AEC28400532006202B2 /* MtpStringBuffer.cpp */; };
+		52569B0728400532006202B2 /* MtpDeviceInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AF228400532006202B2 /* MtpDeviceInfo.cpp */; };
+		52569B0828400532006202B2 /* AndroidMtpDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52569AF528400532006202B2 /* AndroidMtpDevice.mm */; };
+		52569B0928400532006202B2 /* MtpProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AF728400532006202B2 /* MtpProperty.cpp */; };
+		52569B0A28400532006202B2 /* MtpEventPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AF828400532006202B2 /* MtpEventPacket.cpp */; };
+		52569B0B28400532006202B2 /* MtpRequestPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AFA28400532006202B2 /* MtpRequestPacket.cpp */; };
+		52569B0C28400532006202B2 /* MtpObjectInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AFB28400532006202B2 /* MtpObjectInfo.cpp */; };
+		52569B0D28400532006202B2 /* MtpPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AFC28400532006202B2 /* MtpPacket.cpp */; };
+		52569B0E28400532006202B2 /* MtpResponsePacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569AFE28400532006202B2 /* MtpResponsePacket.cpp */; };
+		52569B0F28400532006202B2 /* MtpDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52569B0028400532006202B2 /* MtpDebug.cpp */; };
+		52569B1128400655006202B2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52569B1028400655006202B2 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52569AB12840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBF311628B79300BC5BE2;
+			remoteInfo = libusb;
+		};
+		52569AB32840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBFF51628BB8B00BC5BE2;
+			remoteInfo = dpfp;
+		};
+		52569AB52840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0051628BBDB00BC5BE2;
+			remoteInfo = dpfp_threaded;
+		};
+		52569AB72840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0151628BC0300BC5BE2;
+			remoteInfo = fxload;
+		};
+		52569AB92840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 006AD41C1C8C5A90007F8C6A;
+			remoteInfo = hotplugtest;
+		};
+		52569ABB2840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FC0261628BC6B00BC5BE2;
+			remoteInfo = listdevs;
+		};
+		52569ABD2840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20468D67243298AE00650534;
+			remoteInfo = sam3u_benchmark;
+		};
+		52569ABF2840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008A23D3236C8594004854AA;
+			remoteInfo = stress;
+		};
+		52569AC12840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20468D75243298D300650534;
+			remoteInfo = testlibusb;
+		};
+		52569AC32840019F006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 008FBFBD1628B9FE00BC5BE2;
+			remoteInfo = xusb;
+		};
+		52569ACA284001A8006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AC5284001A7006202B2 /* KFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B1DA2A812FB4A7400AD3459;
+			remoteInfo = KFS;
+		};
+		52569ACC284001A8006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AC5284001A7006202B2 /* KFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B5D063013116090000756AE;
+			remoteInfo = Test;
+		};
+		52569ACE284001F3006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 008FBF301628B79300BC5BE2;
+			remoteInfo = libusb;
+		};
+		52569AD0284001F6006202B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52569AC5284001A7006202B2 /* KFS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B1DA2A712FB4A7400AD3459;
+			remoteInfo = KFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52569A82283FFE46006202B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52569A84283FFE46006202B2 /* kfs_mtpAndroid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kfs_mtpAndroid; sourceTree = BUILT_PRODUCTS_DIR; };
+		52569A87283FFE46006202B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		52569A8E283FFFA9006202B2 /* kfsops.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kfsops.cpp; sourceTree = "<group>"; };
+		52569A8F283FFFA9006202B2 /* discovery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = discovery.cpp; sourceTree = "<group>"; };
+		52569A90283FFFA9006202B2 /* fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fs.h; sourceTree = "<group>"; };
+		52569A91283FFFA9006202B2 /* kfsops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kfsops.h; sourceTree = "<group>"; };
+		52569A92283FFFA9006202B2 /* androidfs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = androidfs.cpp; sourceTree = "<group>"; };
+		52569A93283FFFA9006202B2 /* MusicPlayers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayers.h; sourceTree = "<group>"; };
+		52569A94283FFFA9006202B2 /* discovery.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = discovery.hpp; sourceTree = "<group>"; };
+		52569A95283FFFA9006202B2 /* mnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mnode.cpp; sourceTree = "<group>"; };
+		52569AA32840019F006202B2 /* libusb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libusb.xcodeproj; path = libusb/Xcode/libusb.xcodeproj; sourceTree = "<group>"; };
+		52569AC5284001A7006202B2 /* KFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KFS.xcodeproj; path = kfs/KFS.xcodeproj; sourceTree = "<group>"; };
+		52569AD928400482006202B2 /* libAndroidMtp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAndroidMtp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52569ADE28400532006202B2 /* MtpTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpTypes.h; sourceTree = "<group>"; };
+		52569ADF28400532006202B2 /* MtpResponsePacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpResponsePacket.h; sourceTree = "<group>"; };
+		52569AE028400532006202B2 /* MtpDataPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpDataPacket.cpp; sourceTree = "<group>"; };
+		52569AE128400532006202B2 /* MtpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpUtils.h; sourceTree = "<group>"; };
+		52569AE228400532006202B2 /* f_mtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = f_mtp.h; sourceTree = "<group>"; };
+		52569AE328400532006202B2 /* MtpStringBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpStringBuffer.h; sourceTree = "<group>"; };
+		52569AE428400532006202B2 /* compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		52569AE528400532006202B2 /* usbhost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = usbhost.cpp; sourceTree = "<group>"; };
+		52569AE628400532006202B2 /* MtpDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpDebug.h; sourceTree = "<group>"; };
+		52569AE728400532006202B2 /* MtpUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpUtils.cpp; sourceTree = "<group>"; };
+		52569AE828400532006202B2 /* MtpStorageInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpStorageInfo.cpp; sourceTree = "<group>"; };
+		52569AE928400532006202B2 /* MtpProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpProperty.h; sourceTree = "<group>"; };
+		52569AEA28400532006202B2 /* IMtpDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMtpDatabase.h; sourceTree = "<group>"; };
+		52569AEB28400532006202B2 /* MtpEventPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpEventPacket.h; sourceTree = "<group>"; };
+		52569AEC28400532006202B2 /* MtpStringBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpStringBuffer.cpp; sourceTree = "<group>"; };
+		52569AED28400532006202B2 /* MtpPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpPacket.h; sourceTree = "<group>"; };
+		52569AEE28400532006202B2 /* MtpDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpDeviceInfo.h; sourceTree = "<group>"; };
+		52569AEF28400532006202B2 /* usbhost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usbhost.h; sourceTree = "<group>"; };
+		52569AF028400532006202B2 /* mtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtp.h; sourceTree = "<group>"; };
+		52569AF128400532006202B2 /* MtpObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpObjectInfo.h; sourceTree = "<group>"; };
+		52569AF228400532006202B2 /* MtpDeviceInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpDeviceInfo.cpp; sourceTree = "<group>"; };
+		52569AF328400532006202B2 /* MtpStorageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpStorageInfo.h; sourceTree = "<group>"; };
+		52569AF428400532006202B2 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		52569AF528400532006202B2 /* AndroidMtpDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AndroidMtpDevice.mm; sourceTree = "<group>"; };
+		52569AF628400532006202B2 /* MtpDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpDataPacket.h; sourceTree = "<group>"; };
+		52569AF728400532006202B2 /* MtpProperty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpProperty.cpp; sourceTree = "<group>"; };
+		52569AF828400532006202B2 /* MtpEventPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpEventPacket.cpp; sourceTree = "<group>"; };
+		52569AF928400532006202B2 /* IMtpHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMtpHandle.h; sourceTree = "<group>"; };
+		52569AFA28400532006202B2 /* MtpRequestPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpRequestPacket.cpp; sourceTree = "<group>"; };
+		52569AFB28400532006202B2 /* MtpObjectInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpObjectInfo.cpp; sourceTree = "<group>"; };
+		52569AFC28400532006202B2 /* MtpPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpPacket.cpp; sourceTree = "<group>"; };
+		52569AFD28400532006202B2 /* unique_fd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unique_fd.h; sourceTree = "<group>"; };
+		52569AFE28400532006202B2 /* MtpResponsePacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpResponsePacket.cpp; sourceTree = "<group>"; };
+		52569AFF28400532006202B2 /* AndroidMtpDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidMtpDevice.h; sourceTree = "<group>"; };
+		52569B0028400532006202B2 /* MtpDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpDebug.cpp; sourceTree = "<group>"; };
+		52569B0128400532006202B2 /* MtpRequestPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpRequestPacket.h; sourceTree = "<group>"; };
+		52569B1028400655006202B2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52569A81283FFE46006202B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52569B1128400655006202B2 /* IOKit.framework in Frameworks */,
+				52569AD42840020B006202B2 /* KFS.framework in Frameworks */,
+				52569AD328400209006202B2 /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52569AD728400482006202B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52569A7B283FFE46006202B2 = {
+			isa = PBXGroup;
+			children = (
+				52569AA32840019F006202B2 /* libusb.xcodeproj */,
+				52569AC5284001A7006202B2 /* KFS.xcodeproj */,
+				52569ADD28400532006202B2 /* AndroidMtp */,
+				52569A86283FFE46006202B2 /* kfs_mtpAndroid */,
+				52569A85283FFE46006202B2 /* Products */,
+				52569AD228400209006202B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52569A85283FFE46006202B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52569A84283FFE46006202B2 /* kfs_mtpAndroid */,
+				52569AD928400482006202B2 /* libAndroidMtp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52569A86283FFE46006202B2 /* kfs_mtpAndroid */ = {
+			isa = PBXGroup;
+			children = (
+				52569A87283FFE46006202B2 /* main.cpp */,
+				52569A92283FFFA9006202B2 /* androidfs.cpp */,
+				52569A8F283FFFA9006202B2 /* discovery.cpp */,
+				52569A94283FFFA9006202B2 /* discovery.hpp */,
+				52569A90283FFFA9006202B2 /* fs.h */,
+				52569A8E283FFFA9006202B2 /* kfsops.cpp */,
+				52569A91283FFFA9006202B2 /* kfsops.h */,
+				52569A95283FFFA9006202B2 /* mnode.cpp */,
+				52569A93283FFFA9006202B2 /* MusicPlayers.h */,
+			);
+			path = kfs_mtpAndroid;
+			sourceTree = "<group>";
+		};
+		52569AA42840019F006202B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52569AB22840019F006202B2 /* libusb-1.0.0.dylib */,
+				52569AB42840019F006202B2 /* dpfp */,
+				52569AB62840019F006202B2 /* dpfp_threaded */,
+				52569AB82840019F006202B2 /* fxload */,
+				52569ABA2840019F006202B2 /* hotplugtest */,
+				52569ABC2840019F006202B2 /* listdevs */,
+				52569ABE2840019F006202B2 /* sam3u_benchmark */,
+				52569AC02840019F006202B2 /* stress */,
+				52569AC22840019F006202B2 /* testlibusb */,
+				52569AC42840019F006202B2 /* xusb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52569AC6284001A7006202B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52569ACB284001A8006202B2 /* KFS.framework */,
+				52569ACD284001A8006202B2 /* Test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52569AD228400209006202B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52569B1028400655006202B2 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52569ADD28400532006202B2 /* AndroidMtp */ = {
+			isa = PBXGroup;
+			children = (
+				52569ADE28400532006202B2 /* MtpTypes.h */,
+				52569ADF28400532006202B2 /* MtpResponsePacket.h */,
+				52569AE028400532006202B2 /* MtpDataPacket.cpp */,
+				52569AE128400532006202B2 /* MtpUtils.h */,
+				52569AE228400532006202B2 /* f_mtp.h */,
+				52569AE328400532006202B2 /* MtpStringBuffer.h */,
+				52569AE428400532006202B2 /* compiler.h */,
+				52569AE528400532006202B2 /* usbhost.cpp */,
+				52569AE628400532006202B2 /* MtpDebug.h */,
+				52569AE728400532006202B2 /* MtpUtils.cpp */,
+				52569AE828400532006202B2 /* MtpStorageInfo.cpp */,
+				52569AE928400532006202B2 /* MtpProperty.h */,
+				52569AEA28400532006202B2 /* IMtpDatabase.h */,
+				52569AEB28400532006202B2 /* MtpEventPacket.h */,
+				52569AEC28400532006202B2 /* MtpStringBuffer.cpp */,
+				52569AED28400532006202B2 /* MtpPacket.h */,
+				52569AEE28400532006202B2 /* MtpDeviceInfo.h */,
+				52569AEF28400532006202B2 /* usbhost.h */,
+				52569AF028400532006202B2 /* mtp.h */,
+				52569AF128400532006202B2 /* MtpObjectInfo.h */,
+				52569AF228400532006202B2 /* MtpDeviceInfo.cpp */,
+				52569AF328400532006202B2 /* MtpStorageInfo.h */,
+				52569AF428400532006202B2 /* macros.h */,
+				52569AF528400532006202B2 /* AndroidMtpDevice.mm */,
+				52569AF628400532006202B2 /* MtpDataPacket.h */,
+				52569AF728400532006202B2 /* MtpProperty.cpp */,
+				52569AF828400532006202B2 /* MtpEventPacket.cpp */,
+				52569AF928400532006202B2 /* IMtpHandle.h */,
+				52569AFA28400532006202B2 /* MtpRequestPacket.cpp */,
+				52569AFB28400532006202B2 /* MtpObjectInfo.cpp */,
+				52569AFC28400532006202B2 /* MtpPacket.cpp */,
+				52569AFD28400532006202B2 /* unique_fd.h */,
+				52569AFE28400532006202B2 /* MtpResponsePacket.cpp */,
+				52569AFF28400532006202B2 /* AndroidMtpDevice.h */,
+				52569B0028400532006202B2 /* MtpDebug.cpp */,
+				52569B0128400532006202B2 /* MtpRequestPacket.h */,
+			);
+			path = AndroidMtp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52569AD528400482006202B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52569A83283FFE46006202B2 /* kfs_mtpAndroid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52569A8B283FFE46006202B2 /* Build configuration list for PBXNativeTarget "kfs_mtpAndroid" */;
+			buildPhases = (
+				52569A80283FFE46006202B2 /* Sources */,
+				52569A81283FFE46006202B2 /* Frameworks */,
+				52569A82283FFE46006202B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52569AD1284001F6006202B2 /* PBXTargetDependency */,
+				52569ACF284001F3006202B2 /* PBXTargetDependency */,
+			);
+			name = kfs_mtpAndroid;
+			productName = kfs_mtpAndroid1;
+			productReference = 52569A84283FFE46006202B2 /* kfs_mtpAndroid */;
+			productType = "com.apple.product-type.tool";
+		};
+		52569AD828400482006202B2 /* AndroidMtp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52569ADA28400482006202B2 /* Build configuration list for PBXNativeTarget "AndroidMtp" */;
+			buildPhases = (
+				52569AD528400482006202B2 /* Headers */,
+				52569AD628400482006202B2 /* Sources */,
+				52569AD728400482006202B2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndroidMtp;
+			productName = AndroidMtp;
+			productReference = 52569AD928400482006202B2 /* libAndroidMtp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52569A7C283FFE46006202B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "John Othwolo";
+				TargetAttributes = {
+					52569A83283FFE46006202B2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					52569AD828400482006202B2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 52569A7F283FFE46006202B2 /* Build configuration list for PBXProject "kfs_mtpAndroid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52569A7B283FFE46006202B2;
+			productRefGroup = 52569A85283FFE46006202B2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52569AC6284001A7006202B2 /* Products */;
+					ProjectRef = 52569AC5284001A7006202B2 /* KFS.xcodeproj */;
+				},
+				{
+					ProductGroup = 52569AA42840019F006202B2 /* Products */;
+					ProjectRef = 52569AA32840019F006202B2 /* libusb.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				52569A83283FFE46006202B2 /* kfs_mtpAndroid */,
+				52569AD828400482006202B2 /* AndroidMtp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52569AB22840019F006202B2 /* libusb-1.0.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = "libusb-1.0.0.dylib";
+			remoteRef = 52569AB12840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AB42840019F006202B2 /* dpfp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dpfp;
+			remoteRef = 52569AB32840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AB62840019F006202B2 /* dpfp_threaded */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dpfp_threaded;
+			remoteRef = 52569AB52840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AB82840019F006202B2 /* fxload */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = fxload;
+			remoteRef = 52569AB72840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569ABA2840019F006202B2 /* hotplugtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = hotplugtest;
+			remoteRef = 52569AB92840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569ABC2840019F006202B2 /* listdevs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = listdevs;
+			remoteRef = 52569ABB2840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569ABE2840019F006202B2 /* sam3u_benchmark */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = sam3u_benchmark;
+			remoteRef = 52569ABD2840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AC02840019F006202B2 /* stress */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stress;
+			remoteRef = 52569ABF2840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AC22840019F006202B2 /* testlibusb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = testlibusb;
+			remoteRef = 52569AC12840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569AC42840019F006202B2 /* xusb */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = xusb;
+			remoteRef = 52569AC32840019F006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569ACB284001A8006202B2 /* KFS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KFS.framework;
+			remoteRef = 52569ACA284001A8006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52569ACD284001A8006202B2 /* Test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Test;
+			remoteRef = 52569ACC284001A8006202B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52569A80283FFE46006202B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52569B0628400532006202B2 /* MtpStringBuffer.cpp in Sources */,
+				52569B0828400532006202B2 /* AndroidMtpDevice.mm in Sources */,
+				52569A98283FFFA9006202B2 /* androidfs.cpp in Sources */,
+				52569A88283FFE46006202B2 /* main.cpp in Sources */,
+				52569B0528400532006202B2 /* MtpStorageInfo.cpp in Sources */,
+				52569B0D28400532006202B2 /* MtpPacket.cpp in Sources */,
+				52569A97283FFFA9006202B2 /* discovery.cpp in Sources */,
+				52569B0C28400532006202B2 /* MtpObjectInfo.cpp in Sources */,
+				52569B0E28400532006202B2 /* MtpResponsePacket.cpp in Sources */,
+				52569B0328400532006202B2 /* usbhost.cpp in Sources */,
+				52569B0728400532006202B2 /* MtpDeviceInfo.cpp in Sources */,
+				52569B0228400532006202B2 /* MtpDataPacket.cpp in Sources */,
+				52569B0928400532006202B2 /* MtpProperty.cpp in Sources */,
+				52569B0A28400532006202B2 /* MtpEventPacket.cpp in Sources */,
+				52569A96283FFFA9006202B2 /* kfsops.cpp in Sources */,
+				52569A99283FFFA9006202B2 /* mnode.cpp in Sources */,
+				52569B0428400532006202B2 /* MtpUtils.cpp in Sources */,
+				52569B0F28400532006202B2 /* MtpDebug.cpp in Sources */,
+				52569B0B28400532006202B2 /* MtpRequestPacket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52569AD628400482006202B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52569ACF284001F3006202B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libusb;
+			targetProxy = 52569ACE284001F3006202B2 /* PBXContainerItemProxy */;
+		};
+		52569AD1284001F6006202B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KFS;
+			targetProxy = 52569AD0284001F6006202B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52569A89283FFE46006202B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52569A8A283FFE46006202B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52569A8C283FFE46006202B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libusb/\"",
+					"\"$(SRCROOT)/kfs\"",
+					"\"$(SRCROOT)/kfs_mtpAndroid\"",
+					"\"$(SRCROOT)/\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52569A8D283FFE46006202B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libusb/\"",
+					"\"$(SRCROOT)/kfs\"",
+					"\"$(SRCROOT)/kfs_mtpAndroid\"",
+					"\"$(SRCROOT)/\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52569ADB28400482006202B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52569ADC28400482006202B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW9NBAZ8M7;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52569A7F283FFE46006202B2 /* Build configuration list for PBXProject "kfs_mtpAndroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52569A89283FFE46006202B2 /* Debug */,
+				52569A8A283FFE46006202B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52569A8B283FFE46006202B2 /* Build configuration list for PBXNativeTarget "kfs_mtpAndroid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52569A8C283FFE46006202B2 /* Debug */,
+				52569A8D283FFE46006202B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52569ADA28400482006202B2 /* Build configuration list for PBXNativeTarget "AndroidMtp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52569ADB28400482006202B2 /* Debug */,
+				52569ADC28400482006202B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52569A7C283FFE46006202B2 /* Project object */;
+}

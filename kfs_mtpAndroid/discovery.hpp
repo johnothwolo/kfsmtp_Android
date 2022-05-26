@@ -11,7 +11,7 @@
 
 #include <string>
 #include <vector>
-#include <libusb-1.0/libusb.h>
+#include <libusb/libusb.h>
 
 typedef struct mtp_libusb_device {
     libusb_device *dev = nullptr;

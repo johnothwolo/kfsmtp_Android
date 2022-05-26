@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "mtp.h"
+#include "AndroidMtp/mtp.h"
 #include "AndroidMtp/MtpObjectInfo.h"
 #include "fs.h"
 
