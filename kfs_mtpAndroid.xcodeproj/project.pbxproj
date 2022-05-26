@@ -195,6 +195,7 @@
 		52569B0028400532006202B2 /* MtpDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtpDebug.cpp; sourceTree = "<group>"; };
 		52569B0128400532006202B2 /* MtpRequestPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpRequestPacket.h; sourceTree = "<group>"; };
 		52569B1028400655006202B2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		52569B162840074D006202B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +222,7 @@
 		52569A7B283FFE46006202B2 = {
 			isa = PBXGroup;
 			children = (
+				52569B162840074D006202B2 /* README.md */,
 				52569AA32840019F006202B2 /* libusb.xcodeproj */,
 				52569AC5284001A7006202B2 /* KFS.xcodeproj */,
 				52569ADD28400532006202B2 /* AndroidMtp */,
